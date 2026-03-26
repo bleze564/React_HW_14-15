@@ -3,7 +3,7 @@ import React from "react";
 const ImageGallery = () => {
   return (
     <div>
-      <ul class="gallery"></ul>
+      <ul className="gallery"></ul>
     </div>
   );
 };

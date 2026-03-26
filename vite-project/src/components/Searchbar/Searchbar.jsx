@@ -1,20 +1,21 @@
 import React from "react";
 
-const Searchbar = () => {
+const Searchbar = (setInput) => {
   return (
     <div>
-      <header class="searchbar">
-        <form class="form">
+      <header className="searchbar">
+        <form className="form">
           <button type="submit" class="button">
-            <span class="button-label">Search</span>
+            <span className="button-label">Search</span>
           </button>
 
           <input
-            class="input"
+            className="input"
             type="text"
-            autocomplete="off"
-            autofocus
+            autoComplete="off"
+            autoFocus
             placeholder="Search images and photos"
+            onChange={event => {setInput(event.target.value)}}
           />
         </form>
       </header>
